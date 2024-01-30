@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              screens:{
+                'mobile':'320px',
+                'desktop':'1020px',
+                'tablet':'520px',
+                'media':'730px',
+                'mega':'1100px'
+
+              },
+              fontFamily:{
+                "fuente":['Rubik', "sans-serif"]
+              }
+            }
+          }
+        }
+      </script>
+    <title>Venta PAVOS</title>
+</head>
+<body class="bg-gradient-to-br from-cyan-700 via-cyan-800 to-sky-800 bg-no-repeat h-[235vh] tablet:h-[250vh] media:h-[160vh]">
+    <!--encabezado del NAVEGADOR-->
+    <header class="bg-cyan-900 mobile:w-[90%] mobile:h-[auto] mobile:m-auto mobile:mt-[20px] rounded-[25px] static">
+        <nav>
+            <ul class="flex flex-row justify-center py-[8px] px-[8px] desktop:justify-between">
+                <li><a href="#inicio" class="mobile:py-[2px] mobile:px-[10px] mobile:text-sm mobile:mx-[10px] text-white block rounded-[20px] hover:bg-sky-500 font-fuente desktop:text-lg">Inicio</a></li>
+                <li><a href="#art" class="mobile:py-[2px] mobile:px-[10px] mobile:text-sm mobile:mx-[10px] text-white block rounded-[20px] hover:bg-sky-500 font-fuente desktop:text-lg">Articulos</a></li>
+                <li><a href="#contacto" class="mobile:py-[2px] mobile:px-[10px] mobile:text-sm mobile:mx-[10px] text-white block rounded-[20px] hover:bg-sky-500 font-fuente desktop:text-lg">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <div class="bg-white shadow-[0px_0px_12px_black] mobile:w-[90%] mobile:h-auto m-auto mt-[25px] rounded-xl">
+            <h1 class="px-[10px] py-[12px] font-fuente font-bold desktop:text-xl"> • Como funciona?</h1>
+            <p class="px-[20px] pb-[15px] font-fuente text-teal-800 desktop:text-xl">Es necesario que nos pases el acceso a tu cuenta para hacer la recarga de pavos, del monto que desees!</p>
+        </div>
+    </section>
+    <section class="pt-[40px] w-[100%] px-[20px]" id="arti">
+        <article class="flex mobile:flex-col gap-8 mobile:items-center media:flex-row">
+            <div class="bg-white mobile:w-[88%] mobile:h-[70vh] rounded-[30px] tablet:h-[85vh] media:h-[90vh] desktop:h-[100vh] desktop:ml-[20pxs]">
+                <img src="/imagenes/Pavos-Render.png" alt="pavos" class="mobile:w-[100%] mobile:h-[auto] rounded-t-[30px] ">
+                <p class="mt-[15px] text-black font-fuente font-bold w-[100%] text-[20px] text-center desktop:text-xl"><span class="text-cyan-900">1000</span> <span class="font-thin">Pavos</span> - 5.00 USD</p>
+                <p class="mt-[15px] text-black font-fuente font-bold w-[100%]  text-[20px] text-center desktop:text-xl"><span class="text-cyan-900">2800</span> <span class="font-thin">Pavos</span> - 5.00 USD</p>
+                <p class="mt-[15px] text-black font-fuente font-bold w-[100%]  text-[20px] text-center desktop:text-xl"><span class="text-cyan-900">5000</span> <span class="font-thin">Pavos</span> - 5.00 USD</p>
+                <p class="mt-[15px] text-black font-fuente font-bold w-[100%]  text-[20px] text-center desktop:text-xl"><span class="text-cyan-900">13500</span> <span class="font-thin">Pavos</span> - 5.00 USD</p>
+            </div>
+            <div class="bg-white mobile:w-[88%] mobile:h-[80vh] rounded-[30px] tablet:h-[95vh] media:h-[90vh] desktop:h-[100vh]">
+                <img src="/imagenes/imagen-2.jpeg" alt="pavos" class="mobile:w-[100%] mobile:h-[auto] rounded-t-[30px]">
+                <h2 class="text-[20px] font-bold m-[10px] text-center">Recomendame!</h2>
+                <p class="w-[100%] text-left p-[15px] text-lg font-fuente media:text-xl">Si me recomendas a 5 amigos que hagan cualquier comprar llevate una skin de regalo!</p>
+                <br>
+                <p class="w-[100%] text-left p-[15px] text-lg font-fuente media:text-xl">Y si me recomendas a 10 amigos que compren 13500 pavos, llevate 13500 de regalo!</p>
+            </div>
+        </article>
+    </section>
+    <section class="flex mobile:flex-col gap-8 items-center pt-[40px] media:flex-row media:justify-evenly px-[20px]" id="contacto">
+        <div class="flex flex-rows">
+            <img src="/imagenes/instagram.svg" alt="instagram" class="w-[50px]">
+            <p class="pt-[12px] pl-[20px] text-[20px] text-white font-fuente">@Espiritu900</p>
+        </div>
+        <div class="flex flex-rows">
+            <img src="/imagenes/youtube.png" alt="instagram" class="w-[48px]">
+            <p class="pt-[12px] pl-[20px] text-[20px] text-white font-fuente">Espiritu900</p>
+        </div>
+    </section>
+    <footer class="bg-gray-900 w-[100%] mt-[20%] tablet:mt-[5%]">
+        <div class="flex flex-rows justify-center">
+            <img src="/imagenes/mercadopago.png" alt="mercadoPago" class="w-[180px]">
+            <img src="/imagenes/Visa Payment Card.svg" alt="Visa" class="w-[120px]">
+        </div>
+    </footer>
+</body>
+</html>
